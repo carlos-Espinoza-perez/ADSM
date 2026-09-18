@@ -1,4 +1,4 @@
-﻿# ==========================================
+# ==========================================
 # Repositorio: ADSM - Tobillo Protésico Activo
 # Configuración de exclusión y seguimiento
 # ==========================================
@@ -8,12 +8,14 @@
 
 # Excepciones: Archivos base del repositorio
 !/.gitignore
+!/.gitattributes
 !/README.md
 
 # Excepciones: Carpetas de subsistemas del proyecto
 !/01_Sistema_Mecanico/
 !/02_Sistema_Electronico/
 !/03_Sistema_Computacional/
+!/04_Sistema_Control/
 
 # Ignorar archivos temporales, compilados y de sistema en cualquier nivel
 **/__pycache__/

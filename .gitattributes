@@ -1,0 +1,15 @@
+﻿# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly declare binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.slx binary
+*.sldprt binary
+*.sldasm binary
+*.stl binary
+*.zip binary
+*.xlsx binary
+*.docx binary
