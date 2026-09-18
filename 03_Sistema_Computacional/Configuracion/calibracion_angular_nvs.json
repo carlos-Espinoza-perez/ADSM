@@ -1,0 +1,36 @@
+{
+  "descripcion": "Tabla de calibracion angular e interpolacion almacenada en memoria NVS de ESP32",
+  "unidad_angulo": "grados",
+  "convencion_signo": {
+    "positivo": "dorsiflexion",
+    "negativo": "plantiflexion"
+  },
+  "tabla_5_puntos": [
+    {
+      "angulo_grados": -30.0,
+      "descripcion": "Plantiflexion maxima"
+    },
+    {
+      "angulo_grados": -15.0,
+      "descripcion": "Plantiflexion intermedia"
+    },
+    {
+      "angulo_grados": 0.0,
+      "descripcion": "Neutro articulacion"
+    },
+    {
+      "angulo_grados": 15.0,
+      "descripcion": "Dorsiflexion intermedia"
+    },
+    {
+      "angulo_grados": 30.0,
+      "descripcion": "Dorsiflexion maxima"
+    }
+  ],
+  "parametros_mecanicos_y_sensores": {
+    "debounce_switches_ms": 35,
+    "tiempo_reset_wifi_ms": 3000,
+    "verificacion_as5600": "magnitud_de_campo",
+    "control_primario": "contador_pulsos_encoder"
+  }
+}

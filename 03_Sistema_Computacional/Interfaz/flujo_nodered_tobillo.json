@@ -1,0 +1,3212 @@
+[
+    {
+        "id": "ui_page_tobillo",
+        "type": "ui-page",
+        "name": "Telemetría y Monitoreo",
+        "ui": "0bf0534a7c5cdb51",
+        "path": "/tobillo",
+        "icon": "activity",
+        "layout": "grid",
+        "theme": "11d0ac0246c913a8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ui_page_control",
+        "type": "ui-page",
+        "name": "Control y Calibración",
+        "ui": "0bf0534a7c5cdb51",
+        "path": "/control",
+        "icon": "sliders",
+        "layout": "grid",
+        "theme": "11d0ac0246c913a8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ui_group_tobillo",
+        "type": "ui-group",
+        "name": "Conectividad y Estado",
+        "page": "ui_page_tobillo",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "ui_group_graficas",
+        "type": "ui-group",
+        "name": "Gráficas Temporales en Vivo",
+        "page": "ui_page_tobillo",
+        "width": 12,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "ui_group_telemetria",
+        "type": "ui-group",
+        "name": "Sensores y Articulación",
+        "page": "ui_page_tobillo",
+        "width": 12,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "ui_group_movimiento",
+        "type": "ui-group",
+        "name": "Control de Movimiento",
+        "page": "ui_page_control",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "ui_group_calibracion",
+        "type": "ui-group",
+        "name": "Calibración de Posición",
+        "page": "ui_page_control",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "ui_group_configuracion",
+        "type": "ui-group",
+        "name": "Configuración NVS",
+        "page": "ui_page_control",
+        "width": 6,
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "ui_group_diagnostico",
+        "type": "ui-group",
+        "name": "Diagnóstico y Consola",
+        "page": "ui_page_control",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "mqtt_out_comando",
+        "type": "mqtt out",
+        "z": "tab_tobillo",
+        "name": "tobillo/comando",
+        "topic": "tobillo/comando",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "97b9cda1bf9c4878",
+        "x": 320,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "debug_comando",
+        "type": "debug",
+        "z": "tab_tobillo",
+        "name": "Debug Comando",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 130,
+        "wires": []
+    },
+    {
+        "id": "mqtt_in_estado",
+        "type": "mqtt in",
+        "z": "tab_tobillo",
+        "name": "tobillo/estado",
+        "topic": "tobillo/estado",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "97b9cda1bf9c4878",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 540,
+        "y": 90,
+        "wires": [
+            [
+                "func_estado"
+            ]
+        ]
+    },
+    {
+        "id": "func_estado",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Formato Estado",
+        "func": "if (msg.payload === \"conectado\") {\n    msg.payload = \"ESP32 conectado\";\n    msg.ui_update = { color: \"#16a34a\" };\n} else if (msg.payload === \"desconectado\") {\n    msg.payload = \"ESP32 desconectado\";\n    msg.ui_update = { color: \"#dc2626\" };\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 90,
+        "wires": [
+            [
+                "ui_text_estado"
+            ]
+        ]
+    },
+    {
+        "id": "ui_text_estado",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_tobillo",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "Estado MQTT",
+        "label": "MQTT ESP32",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 940,
+        "y": 90,
+        "wires": []
+    },
+    {
+        "id": "mqtt_in_prueba",
+        "type": "mqtt in",
+        "z": "tab_tobillo",
+        "name": "tobillo/prueba",
+        "topic": "tobillo/prueba",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "97b9cda1bf9c4878",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 540,
+        "y": 150,
+        "wires": [
+            [
+                "func_prueba"
+            ]
+        ]
+    },
+    {
+        "id": "func_prueba",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Formato Prueba con Hora",
+        "func": "const hora = new Date().toLocaleTimeString('es-CR', { hour12: false });\nlet txt = 'OK';\nif (typeof msg.payload === 'string') {\n  txt = msg.payload;\n} else if (msg.payload && typeof msg.payload === 'object') {\n  txt = msg.payload.msg || 'OK';\n}\nmsg.payload = ${txt} ();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 150,
+        "wires": [
+            [
+                "ui_text_prueba"
+            ]
+        ]
+    },
+    {
+        "id": "ui_text_prueba",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_tobillo",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "name": "Último Heartbeat",
+        "label": "Heartbeat",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 940,
+        "y": 150,
+        "wires": []
+    },
+    {
+        "id": "ui_text_marcha",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_tobillo",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "Modo de Marcha",
+        "label": "Marcha",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 580,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ui_text_modo",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_tobillo",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "name": "Clasificador Activo",
+        "label": "Clasificador",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 580,
+        "y": 430,
+        "wires": []
+    },
+    {
+        "id": "ui_text_pos_conf",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_tobillo",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "Posición Confiable",
+        "label": "Posición",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 580,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ui_text_tabla_val",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_tobillo",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "name": "Tabla NVS",
+        "label": "Tabla NVS",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 580,
+        "y": 530,
+        "wires": []
+    },
+    {
+        "id": "ui_text_bloqueo",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_tobillo",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "name": "Estado Bloqueo",
+        "label": "Bloqueo",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 580,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ui_text_fase",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_tobillo",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "name": "Fase de Marcha",
+        "label": "Fase / Ciclo",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 580,
+        "y": 630,
+        "wires": []
+    },
+    {
+        "id": "delay_rate_limit_graficas",
+        "type": "delay",
+        "z": "tab_tobillo",
+        "name": "Rate Limit Gráficas (2 msg/s)",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "2",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 280,
+        "y": 1360,
+        "wires": [
+            [
+                "func_prep_chart_angulo",
+                "func_prep_chart_motor",
+                "func_prep_chart_step_vel"
+            ]
+        ]
+    },
+    {
+        "id": "func_prep_chart_angulo",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Prep Gráfica Ángulo",
+        "func": "let p = msg.payload;\nif (!p) return null;\nlet now = Date.now();\nlet ang = typeof p.angulo === 'number' ? Number(p.angulo.toFixed(2)) : null;\nlet obj = null;\nif (typeof p.setpoint === 'number') {\n    obj = Number(p.setpoint.toFixed(2));\n} else if (typeof p.anguloObjetivo === 'number') {\n    obj = Number(p.anguloObjetivo.toFixed(2));\n}\n\nif (ang !== null) {\n    node.send({ topic: \"Ángulo Real (°)\", payload: ang, timestamp: now });\n}\nif (obj !== null) {\n    node.send({ topic: \"Ángulo Objetivo (°)\", payload: obj, timestamp: now });\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1300,
+        "wires": [
+            [
+                "ui_chart_angulo"
+            ]
+        ]
+    },
+    {
+        "id": "ui_chart_angulo",
+        "type": "ui-chart",
+        "z": "tab_tobillo",
+        "group": "ui_group_graficas",
+        "name": "Ángulo del Tobillo vs Tiempo",
+        "label": "Ángulo del Tobillo vs Tiempo",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Tiempo",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Ángulo (°)",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": -30,
+        "ymax": 30,
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 2,
+        "showLegend": true,
+        "removeOlder": 60,
+        "removeOlderUnit": "1",
+        "removeOlderPoints": "60",
+        "colors": [
+            "#0095FF",
+            "#16a34a",
+            "#FF7F0E",
+            "#2CA02C",
+            "#A347E1"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 6,
+        "className": "",
+        "interpolation": "linear",
+        "x": 760,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "func_prep_chart_motor",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Prep Gráfica Motor",
+        "func": "let p = msg.payload;\nif (!p) return null;\nlet now = Date.now();\nlet pwm = typeof p.pwm === 'number' ? p.pwm : 0;\nreturn { topic: \"PWM Motor\", payload: pwm, timestamp: now };",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1360,
+        "wires": [
+            [
+                "ui_chart_motor"
+            ]
+        ]
+    },
+    {
+        "id": "ui_chart_motor",
+        "type": "ui-chart",
+        "z": "tab_tobillo",
+        "group": "ui_group_graficas",
+        "name": "Motor vs Tiempo",
+        "label": "Gráfica de Motor (PWM) vs Tiempo",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Tiempo",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "PWM (0 - 255)",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": 0,
+        "ymax": 255,
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 2,
+        "showLegend": true,
+        "removeOlder": 60,
+        "removeOlderUnit": "1",
+        "removeOlderPoints": "60",
+        "colors": [
+            "#dc2626",
+            "#f59e0b",
+            "#0284c7"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 6,
+        "className": "",
+        "interpolation": "linear",
+        "x": 760,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "func_prep_chart_step_vel",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Prep Gráfica Ángulo, Vel y Step",
+        "func": "let p = msg.payload;\nif (!p || typeof p.angulo !== 'number') return null;\n\nlet now = Date.now();\nlet prev = context.get('prev');\n\nif (!prev) {\n    context.set('prev', { t: now, ang: p.angulo, pul: p.pulsos || 0 });\n    return null;\n}\n\nlet dt = (now - prev.t) / 1000.0;\nif (dt <= 0.05 || dt > 2.0) dt = 0.5;\n\nlet dAng = p.angulo - prev.ang;\nlet dPul = (p.pulsos !== undefined ? p.pulsos : 0) - prev.pul;\n\nlet vel = dAng / dt;\nlet step = dPul;\n\ncontext.set('prev', { t: now, ang: p.angulo, pul: p.pulsos || 0 });\n\nnode.send({ topic: \"Ángulo (°)\", payload: Number(p.angulo.toFixed(2)), timestamp: now });\nnode.send({ topic: \"Velocidad (°/s)\", payload: Number(vel.toFixed(2)), timestamp: now });\nnode.send({ topic: \"Step (pulsos)\", payload: step, timestamp: now });\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1420,
+        "wires": [
+            [
+                "ui_chart_step_vel"
+            ]
+        ]
+    },
+    {
+        "id": "ui_chart_step_vel",
+        "type": "ui-chart",
+        "z": "tab_tobillo",
+        "group": "ui_group_graficas",
+        "name": "Ángulo, Velocidad y Step vs Tiempo",
+        "label": "Ángulo, Velocidad (°/s) y Step vs Tiempo",
+        "order": 3,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Tiempo",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Valores",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 2,
+        "showLegend": true,
+        "removeOlder": 60,
+        "removeOlderUnit": "1",
+        "removeOlderPoints": "60",
+        "colors": [
+            "#2563eb",
+            "#e11d48",
+            "#059669",
+            "#d97706"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 12,
+        "height": 6,
+        "className": "",
+        "interpolation": "linear",
+        "x": 760,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "mqtt_in_telemetria",
+        "type": "mqtt in",
+        "z": "tab_tobillo",
+        "name": "tobillo/telemetria",
+        "topic": "tobillo/telemetria",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "97b9cda1bf9c4878",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 260,
+        "wires": [
+            [
+                "json_telemetria"
+            ]
+        ]
+    },
+    {
+        "id": "json_telemetria",
+        "type": "json",
+        "z": "tab_tobillo",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "link_out_telemetria"
+            ]
+        ]
+    },
+    {
+        "id": "func_telemetria_estados",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Despachar Estados Telemetría",
+        "func": "let p = msg.payload;\nif (!p || typeof p !== 'object') return null;\n\n// Marcha (Manual / Auto)\nlet mMarcha = { payload: p.modoManual ? \"⚠️ Manual\" : \"🟢 Automático\" };\n\n// Clasificador Activo\nlet mModo = { payload: p.metodoActivo ? p.metodoActivo.toUpperCase() : \"-\" };\n\n// Posición Confiable\nlet mPosConf = { payload: p.posicionConfiable ? \"✅ Confiable\" : \"❌ No Confiable\" };\n\n// Tabla NVS\nlet mTablaVal = { payload: p.tablaValida ? \"✅ Calibrada\" : \"⚠️ Sin Calibrar\" };\n\n// Bloqueo\nlet mBloqueo = { payload: p.bloqueo ? (\"🛑 Bloqueo (\" + (p.razonCorte || \"alerta\") + \")\") : \"✅ Normal\" };\n\n// Fase de Marcha y Ciclo\nlet mFase = { payload: (p.fase || \"-\") + \" (ciclo \" + (p.ciclo || 0) + \")\" };\n\n// Verificación AS5600\nlet angV = typeof p.anguloVerificacion === 'number' ? p.anguloVerificacion.toFixed(1) + \"°\" : \"-\";\nlet disc = typeof p.discrepancia === 'number' ? p.discrepancia.toFixed(1) + \"°\" : \"-\";\nlet mAngVerif = { payload: angV + \" (disc: \" + disc + \")\" };\n\n// Pulsos\nlet mPulsos = { payload: (p.pulsos !== undefined ? p.pulsos : \"-\") };\n\n// Control Motor (PWM y Error)\nlet errStr = typeof p.error === 'number' ? p.error.toFixed(1) + \"°\" : \"-\";\nlet mMotor = { payload: \"PWM \" + (p.pwm || 0) + \" | Err \" + errStr };\n\n// Terreno y Clase\nlet terStr = typeof p.terreno === 'number' ? p.terreno.toFixed(1) + \"°\" : \"-\";\nlet mTerreno = { payload: terStr + \" | \" + (p.clase || \"-\") };\n\nreturn [mMarcha, mModo, mPosConf, mTablaVal, mBloqueo, mFase, mAngVerif, mPulsos, mMotor, mTerreno];\n",
+        "outputs": 10,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 480,
+        "wires": [
+            [
+                "ui_text_marcha"
+            ],
+            [
+                "ui_text_modo"
+            ],
+            [
+                "ui_text_pos_conf"
+            ],
+            [
+                "ui_text_tabla_val"
+            ],
+            [
+                "ui_text_bloqueo"
+            ],
+            [
+                "ui_text_fase"
+            ],
+            [
+                "ui_text_ang_verif"
+            ],
+            [
+                "ui_text_pulsos_enc"
+            ],
+            [
+                "ui_text_error_pwm"
+            ],
+            [
+                "ui_text_terreno_clase"
+            ]
+        ]
+    },
+    {
+        "id": "ui_gauge_calibrado",
+        "type": "ui-gauge",
+        "z": "tab_tobillo",
+        "name": "Ángulo Articulación",
+        "group": "ui_group_telemetria",
+        "order": 1,
+        "value": "payload.angulo",
+        "valueType": "msg",
+        "width": 6,
+        "height": 4,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Ángulo Articulación (Encoder)",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "°",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": -30,
+                "color": "#2563eb"
+            },
+            {
+                "from": -15,
+                "color": "#16a34a"
+            },
+            {
+                "from": 15,
+                "color": "#dc2626"
+            }
+        ],
+        "min": -30,
+        "max": 30,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 320,
+        "y": 1590,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ui_text_ang_verif",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_telemetria",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "Ángulo Verificación AS5600",
+        "label": "Verif. AS5600",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 840,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ui_text_pulsos_enc",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_telemetria",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "name": "Pulsos Encoder",
+        "label": "Pulsos Encoder",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 840,
+        "y": 430,
+        "wires": []
+    },
+    {
+        "id": "ui_text_error_pwm",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_telemetria",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "name": "Control Motor",
+        "label": "Control Motor",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 840,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ui_text_terreno_clase",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_telemetria",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "name": "Inclinación y Clase",
+        "label": "Terreno / Clase",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 14,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 840,
+        "y": 530,
+        "wires": []
+    },
+    {
+        "id": "func_influx_tobillo",
+        "type": "function",
+        "z": "tab_tobillo",
+        "d": true,
+        "name": "Preparar InfluxDB Telemetría",
+        "func": "const p = msg.payload || {};\n\nfunction toNum(val, def = 0) {\n    if (typeof val === 'number' && !isNaN(val)) return val;\n    const n = Number(val);\n    return isNaN(n) ? def : n;\n}\n\nfunction toBoolNum(val) {\n    return (val === true || val === 1 || val === \"true\") ? 1 : 0;\n}\n\nconst ang = toNum(p.angulo !== undefined ? p.angulo : p.anguloCalibrado);\nconst angVerif = toNum(p.anguloVerificacion !== undefined ? p.anguloVerificacion : p.anguloActual);\nconst piePlanoCalc = toBoolNum((p.contactoTalon && p.contactoPunta) || p.fase === \"apoyo_plano\" || p.piePlano);\n\nconst fields = {\n    // Angulos y posicion\n    angulo: ang,\n    anguloCalibrado: ang,\n    anguloVerificacion: angVerif,\n    anguloActual: angVerif,\n    discrepancia: toNum(p.discrepancia, -1),\n    pulsos: toNum(p.pulsos),\n    velAngular: toNum(p.velAngular),\n    velPulsos: toNum(p.velPulsos),\n    \n    // Control y setpoint\n    setpoint: toNum(p.setpoint !== undefined ? p.setpoint : p.anguloObjetivo),\n    anguloObjetivo: toNum(p.anguloObjetivo),\n    error: toNum(p.error),\n    errSeguimiento: toNum(p.errSeguimiento),\n    pwm: toNum(p.pwm),\n    zonaMuerta: toNum(p.zonaMuerta),\n    \n    // Marcha y paso simulado\n    pasoActivo: toBoolNum(p.pasoActivo),\n    pctCiclo: toNum(p.pctCiclo, -1),\n    offsetTerreno: toNum(p.offsetTerreno),\n    msCiclo: toNum(p.msCiclo),\n    amplitud: toNum(p.amplitud),\n    \n    // Tibia, terreno y apoyos\n    anguloTibia: toNum(p.anguloTibia),\n    moduloAcc: toNum(p.moduloAcc, 1.0),\n    terreno: toNum(p.terreno),\n    terrenoValido: toBoolNum(p.terrenoValido),\n    contactoTalon: toBoolNum(p.contactoTalon),\n    contactoPunta: toBoolNum(p.contactoPunta),\n    piePlano: piePlanoCalc,\n    \n    // Estados del sistema\n    posicionConfiable: toBoolNum(p.posicionConfiable),\n    tablaValida: toBoolNum(p.tablaValida),\n    bloqueo: toBoolNum(p.bloqueo),\n    motorActivo: toBoolNum(p.motorActivo),\n    ciclo: toNum(p.ciclo)\n};\n\nconst tags = {\n    metodoActivo: p.metodoActivo ? String(p.metodoActivo) : \"desconocido\",\n    fase: p.fase ? String(p.fase) : \"desconocida\",\n    subfase: p.subfase ? String(p.subfase) : \"inactivo\",\n    clase: p.clase ? String(p.clase) : \"plano\"\n};\n\nmsg.payload = [fields, tags];\nmsg.measurement = \"telemetria\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1940,
+        "wires": [
+            [
+                "influx_out_tobillo"
+            ]
+        ]
+    },
+    {
+        "id": "influx_out_tobillo",
+        "type": "influxdb out",
+        "z": "tab_tobillo",
+        "d": true,
+        "influxdb": "c100_influx_config",
+        "name": "tobillo_protesico",
+        "measurement": "telemetria",
+        "precision": "ms",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "ULSA",
+        "bucket": "tobillo_protesico",
+        "x": 560,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "ui_gauge_tibia",
+        "type": "ui-gauge",
+        "z": "tab_tobillo",
+        "name": "Ángulo de tibia",
+        "group": "ui_group_telemetria",
+        "order": 2,
+        "value": "payload.anguloTibia",
+        "valueType": "msg",
+        "width": 6,
+        "height": 4,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Ángulo de tibia",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "°",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": -90,
+                "color": "#5CD65C"
+            },
+            {
+                "from": -30,
+                "color": "#FFC800"
+            },
+            {
+                "from": 30,
+                "color": "#EA5353"
+            }
+        ],
+        "min": -90,
+        "max": 90,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 320,
+        "y": 1710,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "func_filtrar_terreno",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Filtrar Terreno Válido",
+        "func": "const p = msg.payload || {};\nconst esValido = (p.terrenoValido === true || p.terrenoValido === 1 || p.terrenoValido === \"true\");\n\nif (esValido && typeof p.terreno !== 'undefined') {\n    return {\n        payload: p.terreno,\n        ui_update: {\n            segments: [\n                { from: -40, color: \"#5CD65C\" },\n                { from: -15, color: \"#FFC800\" },\n                { from: 15, color: \"#EA5353\" }\n            ]\n        }\n    };\n} else {\n    // Terreno inválido: gauge atenuado en gris\n    return {\n        payload: typeof p.terreno !== 'undefined' ? p.terreno : 0,\n        ui_update: {\n            segments: [\n                { from: -40, color: \"#9ca3af\" }\n            ]\n        }\n    };\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1780,
+        "wires": [
+            [
+                "ui_gauge_terreno"
+            ]
+        ]
+    },
+    {
+        "id": "ui_gauge_terreno",
+        "type": "ui-gauge",
+        "z": "tab_tobillo",
+        "name": "Terreno",
+        "group": "ui_group_telemetria",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 6,
+        "height": 4,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Terreno",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "°",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": -40,
+                "color": "#5CD65C"
+            },
+            {
+                "from": -15,
+                "color": "#FFC800"
+            },
+            {
+                "from": 15,
+                "color": "#EA5353"
+            }
+        ],
+        "min": -40,
+        "max": 40,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 540,
+        "y": 1780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ui_text_estado_terreno",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_telemetria",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "Estado del terreno",
+        "label": "Estado del terreno",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "(payload.terrenoValido != null ? payload.terrenoValido : payload) = true ? \"VÁLIDO\" : \"SIN PIE PLANO AÚN\"",
+        "valueType": "jsonata",
+        "x": 320,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "ui_text_talon",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_telemetria",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "name": "Talón",
+        "label": "Talón",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "(payload.contactoTalon != null ? payload.contactoTalon : payload) = true ? \"CONTACTO\" : \"libre\"",
+        "valueType": "jsonata",
+        "x": 540,
+        "y": 1710,
+        "wires": []
+    },
+    {
+        "id": "ui_text_punta",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_telemetria",
+        "order": 10,
+        "width": 2,
+        "height": 1,
+        "name": "Punta",
+        "label": "Punta",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "(payload.contactoPunta != null ? payload.contactoPunta : payload) = true ? \"CONTACTO\" : \"libre\"",
+        "valueType": "jsonata",
+        "x": 720,
+        "y": 1710,
+        "wires": []
+    },
+    {
+        "id": "ui_text_pie_plano",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_telemetria",
+        "order": 11,
+        "width": 2,
+        "height": 1,
+        "name": "Pie plano",
+        "label": "Pie plano",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "Helvetica",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "((payload.contactoTalon = true and payload.contactoPunta = true) or payload.fase = \"apoyo_plano\" or payload.piePlano = true) ? \"SÍ\" : \"NO\"",
+        "valueType": "jsonata",
+        "x": 900,
+        "y": 1710,
+        "wires": []
+    },
+    {
+        "id": "ui_btn_parar",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Parar Motor",
+        "label": "PARAR",
+        "order": 1,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Parada de emergencia y bloqueo de motor",
+        "color": "#ffffff",
+        "bgcolor": "#dc2626",
+        "className": "",
+        "icon": "stop",
+        "payload": "parar",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 120,
+        "y": 2090,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_liberar",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Liberar Bloqueo",
+        "label": "Liberar",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Liberar bloqueos y divergencias",
+        "color": "#ffffff",
+        "bgcolor": "#d97706",
+        "className": "",
+        "icon": "refresh",
+        "payload": "liberar",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 260,
+        "y": 2090,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_auto",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Marcha Auto",
+        "label": "Marcha Auto",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Reanudar marcha automática adaptativa",
+        "color": "#ffffff",
+        "bgcolor": "#16a34a",
+        "className": "",
+        "icon": "play",
+        "payload": "auto",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 400,
+        "y": 2090,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_paso_atras",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Paso Atrás 1°",
+        "label": "-1° (Atrás)",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Retroceder articulación 1 grado",
+        "color": "#ffffff",
+        "bgcolor": "#475569",
+        "className": "",
+        "icon": "arrow-left",
+        "payload": "b",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 2150,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_paso_adelante",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Paso Adelante 1°",
+        "label": "+1° (Adelante)",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Avanzar articulación 1 grado",
+        "color": "#ffffff",
+        "bgcolor": "#475569",
+        "className": "",
+        "icon": "arrow-right",
+        "payload": "f",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 2150,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_jog_menos",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Jog -2°",
+        "label": "Jog -2°",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Jog rápido 2 grados atrás",
+        "color": "#ffffff",
+        "bgcolor": "#0284c7",
+        "className": "",
+        "icon": "chevron-double-left",
+        "payload": "jog:-2",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 2210,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_jog_mas",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Jog +2°",
+        "label": "Jog +2°",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Jog rápido 2 grados adelante",
+        "color": "#ffffff",
+        "bgcolor": "#0284c7",
+        "className": "",
+        "icon": "chevron-double-right",
+        "payload": "jog:+2",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 2210,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_preset_m15",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Mover -15°",
+        "label": "-15°",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Ir a -15 grados",
+        "color": "#ffffff",
+        "bgcolor": "#6366f1",
+        "className": "",
+        "icon": "",
+        "payload": "mover:-15",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 120,
+        "y": 2270,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_preset_0",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Neutro 0°",
+        "label": "0° (Neutro)",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Ir a neutro (0 grados)",
+        "color": "#ffffff",
+        "bgcolor": "#2563eb",
+        "className": "",
+        "icon": "",
+        "payload": "mover:0",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 260,
+        "y": 2270,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_preset_p15",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Mover +15°",
+        "label": "+15°",
+        "order": 10,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Ir a +15 grados",
+        "color": "#ffffff",
+        "bgcolor": "#6366f1",
+        "className": "",
+        "icon": "",
+        "payload": "mover:15",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 400,
+        "y": 2270,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_slider_mover",
+        "type": "ui-slider",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Mover a Posición",
+        "label": "Mover Articulación (°)",
+        "tooltip": "Mover a posición angular deseada (-30° a +30°)",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "thumbLabel": true,
+        "min": -30,
+        "max": 30,
+        "step": 1,
+        "className": "",
+        "x": 160,
+        "y": 2350,
+        "wires": [
+            [
+                "func_formato_mover"
+            ]
+        ]
+    },
+    {
+        "id": "func_formato_mover",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Formato Mover",
+        "func": "msg.payload = 'mover:' + msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 2350,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_slider_duty",
+        "type": "ui-slider",
+        "z": "tab_tobillo",
+        "group": "ui_group_movimiento",
+        "name": "Velocidad Jog",
+        "label": "Velocidad Jog (Duty 60-255)",
+        "tooltip": "Ajustar velocidad PWM para movimientos Jog",
+        "order": 12,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "thumbLabel": true,
+        "min": 60,
+        "max": 255,
+        "step": 5,
+        "className": "",
+        "x": 160,
+        "y": 2420,
+        "wires": [
+            [
+                "func_formato_duty"
+            ]
+        ]
+    },
+    {
+        "id": "func_formato_duty",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Formato Duty",
+        "func": "msg.payload = 'duty:' + msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 2420,
+        "wires": [
+            [
+                "link_out_movimiento"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_cero",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_calibracion",
+        "name": "Fijar Cero",
+        "label": "Fijar Cero (0°)",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Establecer posición física actual como neutro 0°",
+        "color": "#ffffff",
+        "bgcolor": "#2563eb",
+        "className": "",
+        "icon": "crosshairs",
+        "payload": "cero",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 2590,
+        "wires": [
+            [
+                "link_out_calibracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_tope",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_calibracion",
+        "name": "Buscar Tope",
+        "label": "Buscar Tope",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Buscar tope de tuerca por corriente de calado",
+        "color": "#ffffff",
+        "bgcolor": "#475569",
+        "className": "",
+        "icon": "compass",
+        "payload": "tope",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 2590,
+        "wires": [
+            [
+                "link_out_calibracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_reset",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_calibracion",
+        "name": "Reset Contador",
+        "label": "Reset Pulsos",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Poner contador de pulsos a cero sin tocar la tabla",
+        "color": "#ffffff",
+        "bgcolor": "#64748b",
+        "className": "",
+        "icon": "history",
+        "payload": "reset",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 2770,
+        "wires": [
+            [
+                "link_out_calibracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_cal_m30",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_calibracion",
+        "name": "Calibrar -30°",
+        "label": "Cal -30°",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Registrar posición actual como -30°",
+        "color": "#ffffff",
+        "bgcolor": "#0891b2",
+        "className": "",
+        "icon": "map-marker",
+        "payload": "cal:-30",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 2650,
+        "wires": [
+            [
+                "link_out_calibracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_cal_m15",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_calibracion",
+        "name": "Calibrar -15°",
+        "label": "Cal -15°",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Registrar posición actual como -15°",
+        "color": "#ffffff",
+        "bgcolor": "#0891b2",
+        "className": "",
+        "icon": "map-marker",
+        "payload": "cal:-15",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 2650,
+        "wires": [
+            [
+                "link_out_calibracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_cal_p15",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_calibracion",
+        "name": "Calibrar +15°",
+        "label": "Cal +15°",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Registrar posición actual como +15°",
+        "color": "#ffffff",
+        "bgcolor": "#0891b2",
+        "className": "",
+        "icon": "map-marker",
+        "payload": "cal:15",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 2710,
+        "wires": [
+            [
+                "link_out_calibracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_cal_p30",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_calibracion",
+        "name": "Calibrar +30°",
+        "label": "Cal +30°",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Registrar posición actual como +30°",
+        "color": "#ffffff",
+        "bgcolor": "#0891b2",
+        "className": "",
+        "icon": "map-marker",
+        "payload": "cal:30",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 2710,
+        "wires": [
+            [
+                "link_out_calibracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_tabla_borrar",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_calibracion",
+        "name": "Borrar Tabla",
+        "label": "Borrar Tabla",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Borrar tabla de calibración en NVS",
+        "color": "#ffffff",
+        "bgcolor": "#991b1b",
+        "className": "",
+        "icon": "trash",
+        "payload": "tabla:borrar",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 2770,
+        "wires": [
+            [
+                "link_out_calibracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_dropdown_comando",
+        "type": "ui-dropdown",
+        "z": "tab_tobillo",
+        "group": "ui_group_configuracion",
+        "name": "Selector de Método",
+        "label": "Método Clasificador",
+        "tooltip": "Selecciona el método de clasificación activo",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "value": "histeresis",
+                "label": "Histéresis",
+                "type": "str"
+            },
+            {
+                "value": "difuso",
+                "label": "Lógica Difusa",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "className": "",
+        "typeIsComboBox": false,
+        "msgTrigger": "onChange",
+        "x": 160,
+        "y": 2970,
+        "wires": [
+            [
+                "link_out_configuracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_slider_pwmmin",
+        "type": "ui-slider",
+        "z": "tab_tobillo",
+        "group": "ui_group_configuracion",
+        "name": "PWM Mínimo",
+        "label": "PWM Mínimo (Arranque 60-200)",
+        "tooltip": "PWM mínimo para vencer fricción (se guarda en NVS)",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "thumbLabel": true,
+        "min": 60,
+        "max": 200,
+        "step": 5,
+        "className": "",
+        "x": 160,
+        "y": 3030,
+        "wires": [
+            [
+                "func_formato_pwmmin"
+            ]
+        ]
+    },
+    {
+        "id": "func_formato_pwmmin",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Formato PWM Mín",
+        "func": "msg.payload = 'pwmmin:' + msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 3030,
+        "wires": [
+            [
+                "link_out_configuracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_slider_kp",
+        "type": "ui-slider",
+        "z": "tab_tobillo",
+        "group": "ui_group_configuracion",
+        "name": "Kp Control",
+        "label": "Kp Control Proporcional (1-25)",
+        "tooltip": "Ganancia proporcional del lazo de posición (se guarda en NVS)",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "thumbLabel": true,
+        "min": 1,
+        "max": 25,
+        "step": 0.5,
+        "className": "",
+        "x": 160,
+        "y": 3090,
+        "wires": [
+            [
+                "func_formato_kp"
+            ]
+        ]
+    },
+    {
+        "id": "func_formato_kp",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Formato Kp",
+        "func": "msg.payload = 'kp:' + msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 3090,
+        "wires": [
+            [
+                "link_out_configuracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_salida_pos",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_configuracion",
+        "name": "Salida Positiva",
+        "label": "Salida (+)",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Lado de salida de husillo positivo",
+        "color": "#ffffff",
+        "bgcolor": "#475569",
+        "className": "",
+        "icon": "",
+        "payload": "salida:+",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 3160,
+        "wires": [
+            [
+                "link_out_configuracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_salida_neg",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_configuracion",
+        "name": "Salida Negativa",
+        "label": "Salida (-)",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Lado de salida de husillo negativo",
+        "color": "#ffffff",
+        "bgcolor": "#475569",
+        "className": "",
+        "icon": "",
+        "payload": "salida:-",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 3160,
+        "wires": [
+            [
+                "link_out_configuracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_terreno_pos",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_configuracion",
+        "name": "Signo Terreno (+)",
+        "label": "Terreno (+)",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Convención normal de pendiente terreno",
+        "color": "#ffffff",
+        "bgcolor": "#0284c7",
+        "className": "",
+        "icon": "",
+        "payload": "signoterreno:+",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 3220,
+        "wires": [
+            [
+                "link_out_configuracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_terreno_neg",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_configuracion",
+        "name": "Signo Terreno (-)",
+        "label": "Terreno (-)",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Invertir signo de pendiente terreno",
+        "color": "#ffffff",
+        "bgcolor": "#0284c7",
+        "className": "",
+        "icon": "",
+        "payload": "signoterreno:-",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 3220,
+        "wires": [
+            [
+                "link_out_configuracion"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_diag_estado",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_diagnostico",
+        "name": "Diag Estado",
+        "label": "Estado General",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Imprimir estado general en Serial",
+        "color": "#ffffff",
+        "bgcolor": "#334155",
+        "className": "",
+        "icon": "info",
+        "payload": "estado",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 3610,
+        "wires": [
+            [
+                "link_out_diagnostico"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_diag_tabla",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_diagnostico",
+        "name": "Diag Tabla",
+        "label": "Ver Tabla",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Imprimir tabla de calibración en Serial",
+        "color": "#ffffff",
+        "bgcolor": "#334155",
+        "className": "",
+        "icon": "table",
+        "payload": "tabla",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 3610,
+        "wires": [
+            [
+                "link_out_diagnostico"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_diag_config",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_diagnostico",
+        "name": "Diag Config",
+        "label": "Ver Config NVS",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Imprimir configuración NVS en Serial",
+        "color": "#ffffff",
+        "bgcolor": "#334155",
+        "className": "",
+        "icon": "cogs",
+        "payload": "config",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 3670,
+        "wires": [
+            [
+                "link_out_diagnostico"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_diag_sensor",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_diagnostico",
+        "name": "Diag Sensor",
+        "label": "Diag AS5600",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Diagnóstico del sensor AS5600 en Serial",
+        "color": "#ffffff",
+        "bgcolor": "#334155",
+        "className": "",
+        "icon": "wrench",
+        "payload": "diag",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 3670,
+        "wires": [
+            [
+                "link_out_diagnostico"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_diag_terreno",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_diagnostico",
+        "name": "Diag Terreno",
+        "label": "Diag Terreno",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Diagnóstico de sensor tibial y terreno",
+        "color": "#ffffff",
+        "bgcolor": "#334155",
+        "className": "",
+        "icon": "area-chart",
+        "payload": "terreno",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 3730,
+        "wires": [
+            [
+                "link_out_diagnostico"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_diag_ruido",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_diagnostico",
+        "name": "Test Ruido",
+        "label": "Test Ruido",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Ensayo de ruido estático en sensores",
+        "color": "#ffffff",
+        "bgcolor": "#334155",
+        "className": "",
+        "icon": "line-chart",
+        "payload": "ruido",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 3730,
+        "wires": [
+            [
+                "link_out_diagnostico"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_diag_pulsos",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_diagnostico",
+        "name": "Pulsos (p)",
+        "label": "Pulsos (p)",
+        "order": 9,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Reporte instantáneo de pulsos y escala",
+        "color": "#ffffff",
+        "bgcolor": "#334155",
+        "className": "",
+        "icon": "terminal",
+        "payload": "p",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 160,
+        "y": 3790,
+        "wires": [
+            [
+                "link_out_diagnostico"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_diag_ayuda",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_diagnostico",
+        "name": "Ayuda (?)",
+        "label": "Ayuda (?)",
+        "order": 10,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Imprimir lista de comandos por Serial",
+        "color": "#ffffff",
+        "bgcolor": "#334155",
+        "className": "",
+        "icon": "question",
+        "payload": "ayuda",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 360,
+        "y": 3790,
+        "wires": [
+            [
+                "link_out_diagnostico"
+            ]
+        ]
+    },
+    {
+        "id": "ui_text_input_manual",
+        "type": "ui-text-input",
+        "z": "tab_tobillo",
+        "group": "ui_group_diagnostico",
+        "name": "Comando Manual",
+        "label": "Comando Libre (Enter para enviar)",
+        "tooltip": "Enviar cualquier comando directo al firmware v4",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "mode": "text",
+        "delay": 300,
+        "passthru": false,
+        "sendOnDelay": false,
+        "sendOnBlur": false,
+        "sendOnEnter": true,
+        "className": "",
+        "x": 160,
+        "y": 3550,
+        "wires": [
+            [
+                "link_out_diagnostico"
+            ]
+        ]
+    },
+    {
+        "id": "tab_tobillo",
+        "type": "tab",
+        "label": "Tobillo - Conectividad",
+        "disabled": false,
+        "info": "Flujo de conectividad y control en tiempo real para el tobillo protésico activo (ADSM, ULSA León).",
+        "env": []
+    },
+    {
+        "id": "97b9cda1bf9c4878",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Local",
+        "broker": "127.0.0.1",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0bf0534a7c5cdb51",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "11d0ac0246c913a8",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#fcfcfd",
+            "primary": "#0d74ce",
+            "bgPage": "#f9f9fb",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9e0"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "c100_influx_config",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": 8086,
+        "protocol": "http",
+        "database": "database",
+        "name": "[v2.0] IMS",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "timeout": 10,
+        "rejectUnauthorized": false
+    },
+    {
+        "id": "mqtt_in_log",
+        "type": "mqtt in",
+        "z": "tab_tobillo",
+        "name": "tobillo/log",
+        "topic": "tobillo/log",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "97b9cda1bf9c4878",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 3400,
+        "wires": [
+            [
+                "func_consola_buffer"
+            ]
+        ]
+    },
+    {
+        "id": "func_consola_buffer",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Buffer Consola Serial",
+        "func": "let buffer = context.get('buffer') || [];\n\nif (msg.payload === '__CLEAR__') {\n    buffer = [];\n    context.set('buffer', buffer);\n    return { payload: \"\" };\n}\n\nlet texto = typeof msg.payload === 'string' ? msg.payload.trimEnd() : String(msg.payload);\nif (texto.length === 0) return null;\n\nlet hora = new Date().toLocaleTimeString('es-CR', { hour12: false });\nlet linea = `[${hora}] ${texto}`;\n\nbuffer.push(linea);\nif (buffer.length > 70) {\n    buffer.shift();\n}\ncontext.set('buffer', buffer);\n\nmsg.payload = buffer.join(\"\\n\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 3400,
+        "wires": [
+            [
+                "ui_template_consola"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_limpiar_consola",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_diagnostico",
+        "name": "Limpiar Consola",
+        "label": "Limpiar",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Limpiar el texto de la consola serial",
+        "color": "#ffffff",
+        "bgcolor": "#64748b",
+        "className": "",
+        "icon": "trash",
+        "payload": "__CLEAR__",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 100,
+        "y": 3460,
+        "wires": [
+            [
+                "func_consola_buffer"
+            ]
+        ]
+    },
+    {
+        "id": "ui_template_consola",
+        "type": "ui-template",
+        "z": "tab_tobillo",
+        "group": "ui_group_consola",
+        "page": "",
+        "ui": "",
+        "name": "Consola Serial Terminal",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "format": "<div class=\"serial-console\" style=\"background:#090d16; color:#22c55e; font-family:'Consolas','Courier New',monospace; font-size:11.5px; line-height:1.45; padding:10px; border-radius:6px; height:288px; box-sizing:border-box; overflow-y:auto; white-space:pre-wrap; word-break:break-all; border:1px solid #1e293b; box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);\">\n  <div v-if=\"!msg?.payload\" style=\"color:#64748b; font-style:italic;\">Esperando datos del puerto Serial (ESP32)...</div>\n  <div v-else>{{ msg.payload }}</div>\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 3400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "link_in_comandos",
+        "type": "link in",
+        "z": "tab_tobillo",
+        "name": "Comandos",
+        "links": [
+            "link_out_calibracion",
+            "link_out_caminar",
+            "link_out_configuracion",
+            "link_out_diagnostico",
+            "link_out_movimiento"
+        ],
+        "x": 100,
+        "y": 90,
+        "wires": [
+            [
+                "mqtt_out_comando",
+                "debug_comando"
+            ]
+        ]
+    },
+    {
+        "id": "link_out_movimiento",
+        "type": "link out",
+        "z": "tab_tobillo",
+        "name": "Comandos movimiento",
+        "mode": "link",
+        "links": [
+            "link_in_comandos"
+        ],
+        "x": 580,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "link_out_calibracion",
+        "type": "link out",
+        "z": "tab_tobillo",
+        "name": "Comandos calibración",
+        "mode": "link",
+        "links": [
+            "link_in_comandos"
+        ],
+        "x": 580,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "link_out_configuracion",
+        "type": "link out",
+        "z": "tab_tobillo",
+        "name": "Comandos configuración",
+        "mode": "link",
+        "links": [
+            "link_in_comandos"
+        ],
+        "x": 580,
+        "y": 3090,
+        "wires": []
+    },
+    {
+        "id": "link_out_diagnostico",
+        "type": "link out",
+        "z": "tab_tobillo",
+        "name": "Comandos diagnóstico",
+        "mode": "link",
+        "links": [
+            "link_in_comandos"
+        ],
+        "x": 580,
+        "y": 3670,
+        "wires": []
+    },
+    {
+        "id": "link_out_telemetria",
+        "type": "link out",
+        "z": "tab_tobillo",
+        "name": "Telemetría",
+        "mode": "link",
+        "links": [
+            "link_in_telem_articulacion",
+            "link_in_telem_caminar",
+            "link_in_telem_estados",
+            "link_in_telem_graficas",
+            "link_in_telem_influx",
+            "link_in_telem_tibia"
+        ],
+        "x": 500,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "link_in_telem_estados",
+        "type": "link in",
+        "z": "tab_tobillo",
+        "name": "Telemetría - Estados",
+        "links": [
+            "link_out_telemetria"
+        ],
+        "x": 100,
+        "y": 480,
+        "wires": [
+            [
+                "func_telemetria_estados",
+                "func_prueba"
+            ]
+        ]
+    },
+    {
+        "id": "link_in_telem_graficas",
+        "type": "link in",
+        "z": "tab_tobillo",
+        "name": "Telemetría - Gráficas",
+        "links": [
+            "link_out_telemetria"
+        ],
+        "x": 100,
+        "y": 1360,
+        "wires": [
+            [
+                "delay_rate_limit_graficas"
+            ]
+        ]
+    },
+    {
+        "id": "link_in_telem_articulacion",
+        "type": "link in",
+        "z": "tab_tobillo",
+        "name": "Telemetría - Articulación",
+        "links": [
+            "link_out_telemetria"
+        ],
+        "x": 100,
+        "y": 1590,
+        "wires": [
+            [
+                "ui_gauge_calibrado"
+            ]
+        ]
+    },
+    {
+        "id": "link_in_telem_tibia",
+        "type": "link in",
+        "z": "tab_tobillo",
+        "name": "Telemetría - Tibia",
+        "links": [
+            "link_out_telemetria"
+        ],
+        "x": 100,
+        "y": 1750,
+        "wires": [
+            [
+                "ui_gauge_tibia",
+                "func_filtrar_terreno",
+                "ui_text_estado_terreno",
+                "ui_text_talon",
+                "ui_text_punta",
+                "ui_text_pie_plano"
+            ]
+        ]
+    },
+    {
+        "id": "link_in_telem_influx",
+        "type": "link in",
+        "z": "tab_tobillo",
+        "name": "Telemetría - InfluxDB",
+        "links": [
+            "link_out_telemetria"
+        ],
+        "x": 100,
+        "y": 1940,
+        "wires": [
+            [
+                "func_influx_tobillo"
+            ]
+        ]
+    },
+    {
+        "id": "comment_comandos",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Salida de comandos",
+        "info": "",
+        "x": 200,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "comment_estado",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Estado de conexión",
+        "info": "",
+        "x": 660,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "comment_telemetria",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Recepción de telemetría",
+        "info": "",
+        "x": 200,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "comment_estados_sys",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Variables de estado",
+        "info": "",
+        "x": 200,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "comment_graficas",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Gráficas de telemetría",
+        "info": "",
+        "x": 200,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "comment_articulacion",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Sensor de articulación",
+        "info": "",
+        "x": 200,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "comment_tibia_terreno",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Inclinación tibial y apoyos",
+        "info": "",
+        "x": 200,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "comment_movimiento",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Control manual",
+        "info": "",
+        "x": 200,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "comment_calibracion",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Calibración",
+        "info": "",
+        "x": 200,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "comment_configuracion",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Parámetros NVS",
+        "info": "",
+        "x": 200,
+        "y": 2920,
+        "wires": []
+    },
+    {
+        "id": "comment_diagnostico",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Consola y diagnóstico",
+        "info": "",
+        "x": 200,
+        "y": 3340,
+        "wires": []
+    },
+    {
+        "id": "ui_group_caminar",
+        "type": "ui-group",
+        "name": "Marcha y Paso Simulado",
+        "page": "ui_page_tobillo",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "comment_caminar",
+        "type": "comment",
+        "z": "tab_tobillo",
+        "name": "Marcha y Paso Simulado",
+        "info": "Controles de ciclo, terreno y monitoreo de las subfases de marcha.",
+        "x": 200,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ui_slider_caminar_terreno",
+        "type": "ui-slider",
+        "z": "tab_tobillo",
+        "group": "ui_group_caminar",
+        "name": "Terreno para Paso",
+        "label": "Terreno de Paso (°)",
+        "tooltip": "Inclinación de terreno para simular el paso (-15° a +15°)",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "terreno_paso",
+        "topicType": "str",
+        "thumbLabel": true,
+        "min": -15,
+        "max": 15,
+        "step": 1,
+        "className": "",
+        "x": 140,
+        "y": 870,
+        "wires": [
+            [
+                "func_guardar_terreno_paso"
+            ]
+        ]
+    },
+    {
+        "id": "func_guardar_terreno_paso",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Guardar Terreno Paso",
+        "func": "flow.set('terreno_paso', Number(msg.payload) || 0);\nreturn null;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 870,
+        "wires": []
+    },
+    {
+        "id": "ui_slider_caminar_ciclo",
+        "type": "ui-slider",
+        "z": "tab_tobillo",
+        "group": "ui_group_caminar",
+        "name": "Duración Ciclo Paso",
+        "label": "Duración Ciclo (ms)",
+        "tooltip": "Duración del ciclo completo de marcha en ms (1000 a 8000 ms)",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "thumbLabel": true,
+        "min": 1000,
+        "max": 8000,
+        "step": 500,
+        "className": "",
+        "x": 140,
+        "y": 930,
+        "wires": [
+            [
+                "func_cmd_ciclo"
+            ]
+        ]
+    },
+    {
+        "id": "func_cmd_ciclo",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Formato Ciclo",
+        "func": "let val = parseInt(msg.payload, 10);\nif (!isNaN(val)) {\n    return { topic: 'tobillo/comando', payload: 'ciclo:' + val };\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 930,
+        "wires": [
+            [
+                "link_out_caminar"
+            ]
+        ]
+    },
+    {
+        "id": "ui_slider_caminar_amplitud",
+        "type": "ui-slider",
+        "z": "tab_tobillo",
+        "group": "ui_group_caminar",
+        "name": "Amplitud Paso",
+        "label": "Amplitud de Paso",
+        "tooltip": "Factor de escala angular para la trayectoria de marcha (0.5 a 1.2)",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "outs": "end",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "thumbLabel": true,
+        "min": 0.5,
+        "max": 1.2,
+        "step": 0.1,
+        "className": "",
+        "x": 140,
+        "y": 990,
+        "wires": [
+            [
+                "func_cmd_amplitud"
+            ]
+        ]
+    },
+    {
+        "id": "func_cmd_amplitud",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Formato Amplitud",
+        "func": "let val = parseFloat(msg.payload);\nif (!isNaN(val)) {\n    return { topic: 'tobillo/comando', payload: 'amplitud:' + val.toFixed(2) };\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 990,
+        "wires": [
+            [
+                "link_out_caminar"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_ejecutar_paso",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_caminar",
+        "name": "Ejecutar Paso",
+        "label": "1 PASO",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Ejecuta un ciclo de marcha con el terreno configurado",
+        "color": "#ffffff",
+        "bgcolor": "#2563eb",
+        "className": "",
+        "icon": "play",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 140,
+        "y": 1050,
+        "wires": [
+            [
+                "func_cmd_ejecutar_paso"
+            ]
+        ]
+    },
+    {
+        "id": "func_cmd_ejecutar_paso",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Comando Paso",
+        "func": "let ter = flow.get('terreno_paso');\nif (typeof ter !== 'number') ter = 0;\nreturn { topic: 'tobillo/comando', payload: 'paso:' + ter.toFixed(1) };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1050,
+        "wires": [
+            [
+                "link_out_caminar"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_caminar_continuo",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_caminar",
+        "name": "Caminar Continuo",
+        "label": "CAMINAR",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Inicia secuencia continua de 5 pasos con el terreno configurado",
+        "color": "#ffffff",
+        "bgcolor": "#059669",
+        "className": "",
+        "icon": "repeat",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 140,
+        "y": 1110,
+        "wires": [
+            [
+                "func_cmd_caminar_continuo"
+            ]
+        ]
+    },
+    {
+        "id": "func_cmd_caminar_continuo",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Comando Caminar",
+        "func": "let ter = flow.get('terreno_paso');\nif (typeof ter !== 'number') ter = 0;\nlet t = ter.toFixed(1);\nreturn { topic: 'tobillo/comando', payload: 'caminar:' + t + ',' + t + ',' + t + ',' + t + ',' + t };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1110,
+        "wires": [
+            [
+                "link_out_caminar"
+            ]
+        ]
+    },
+    {
+        "id": "ui_btn_detener_paso",
+        "type": "ui-button",
+        "z": "tab_tobillo",
+        "group": "ui_group_caminar",
+        "name": "Detener Marcha",
+        "label": "DETENER",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "tooltip": "Detiene inmediatamente el paso simulado o caminata",
+        "color": "#ffffff",
+        "bgcolor": "#dc2626",
+        "className": "",
+        "icon": "stop",
+        "payload": "paso:parar",
+        "payloadType": "str",
+        "topic": "tobillo/comando",
+        "topicType": "str",
+        "x": 140,
+        "y": 1170,
+        "wires": [
+            [
+                "link_out_caminar"
+            ]
+        ]
+    },
+    {
+        "id": "link_out_caminar",
+        "type": "link out",
+        "z": "tab_tobillo",
+        "name": "Comandos caminar",
+        "links": [
+            "link_in_comandos"
+        ],
+        "x": 600,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "link_in_telem_caminar",
+        "type": "link in",
+        "z": "tab_tobillo",
+        "name": "Telemetría - Caminar",
+        "links": [
+            "link_out_telemetria"
+        ],
+        "x": 100,
+        "y": 780,
+        "wires": [
+            [
+                "func_telem_caminar"
+            ]
+        ]
+    },
+    {
+        "id": "func_telem_caminar",
+        "type": "function",
+        "z": "tab_tobillo",
+        "name": "Procesar Telemetría Caminar",
+        "func": "let p = msg.payload;\nif (!p) return null;\n\nlet pasoActivo = !!p.pasoActivo;\nlet subfase = p.subfase || (pasoActivo ? \"ACTIVO\" : \"REPOSO\");\nlet pct = typeof p.pctCiclo === 'number' ? p.pctCiclo.toFixed(1) + \"%\" : \"--\";\nlet err = typeof p.errSeguimiento === 'number' ? p.errSeguimiento.toFixed(2) + \"°\" : \"--\";\nlet estadoHtml = pasoActivo ? '<span style=\"color:#16a34a;font-weight:bold;\">EN MARCHA</span>' : '<span style=\"color:#64748b;\">DETENIDO</span>';\n\nreturn [\n    { payload: estadoHtml },\n    { payload: subfase },\n    { payload: pct },\n    { payload: err }\n];",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 780,
+        "wires": [
+            [
+                "ui_text_caminar_estado"
+            ],
+            [
+                "ui_text_caminar_subfase"
+            ],
+            [
+                "ui_text_caminar_pct"
+            ],
+            [
+                "ui_text_caminar_error"
+            ]
+        ]
+    },
+    {
+        "id": "ui_text_caminar_estado",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_caminar",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "name": "Estado Marcha",
+        "label": "Marcha Activa",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 580,
+        "y": 750,
+        "wires": []
+    },
+    {
+        "id": "ui_text_caminar_subfase",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_caminar",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "name": "Subfase de Marcha",
+        "label": "Subfase",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 580,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "ui_text_caminar_pct",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_caminar",
+        "order": 9,
+        "width": 3,
+        "height": 1,
+        "name": "Progreso Ciclo",
+        "label": "Progreso Ciclo",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 840,
+        "y": 750,
+        "wires": []
+    },
+    {
+        "id": "ui_text_caminar_error",
+        "type": "ui-text",
+        "z": "tab_tobillo",
+        "group": "ui_group_caminar",
+        "order": 10,
+        "width": 3,
+        "height": 1,
+        "name": "Error Seguimiento",
+        "label": "Error Seg.",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 840,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "ui_group_consola",
+        "type": "ui-group",
+        "name": "Consola Serial y MQTT",
+        "page": "ui_page_control",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    }
+]
