@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1270" viewBox="0 0 1520 1270">
+<rect width="1520" height="1270" fill="#E4E7E2"/>
+<defs><pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="7" stroke="#8A9096" stroke-width="1"/></pattern></defs>
+<text x="48.0" y="46.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="26" fill="#2B2F33" text-anchor="start" font-weight="600">Tobillo protésico activo · disposición de piezas y cotas principales</text>
+<text x="48.0" y="70.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="14" fill="#6E7B8B" text-anchor="start" font-weight="400">Prototipo escalado ULSA León 2026 · el motor y el husillo van del lado del talón, no del lado de los dedos</text>
+<line x1="48.0" y1="84.0" x2="1472.0" y2="84.0" stroke="#9AA3A8" stroke-width="1" stroke-opacity="0.7" stroke-linecap="round"/>
+<text x="48.0" y="116.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="18" fill="#2B2F33" text-anchor="start" font-weight="600">A · Vista lateral (plano sagital)</text>
+<text x="48.0" y="136.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">La columna baja por detrás y termina en el cubo. El husillo corre por dentro de la columna, no delante de ella.</text>
+<polygon points="276.0,645.2 892.0,645.2 892.0,610.0 478.4,610.0 478.4,451.6 302.4,451.6 302.4,610.0 276.0,610.0" fill="#C97B3C" fill-opacity="0.18" stroke="#C97B3C" stroke-width="1.8"/>
+<rect x="284.8" y="412.0" width="114.4" height="88.0" rx="0" fill="url(#hatch)" fill-opacity="0.5" stroke="#8A9096" stroke-width="1.9"/>
+<rect x="284.8" y="332.8" width="114.4" height="52.8" rx="0" fill="url(#hatch)" fill-opacity="0.5" stroke="#8A9096" stroke-width="1.9"/>
+<rect x="282.8" y="385.6" width="118.4" height="26.4" rx="0" fill="#E4E7E2" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<path d="M 284.8 391.8 L 296.8 405.8 L 308.8 391.8 L 320.8 405.8 L 332.8 391.8 L 344.8 405.8 L 356.8 391.8 L 368.8 405.8 L 380.8 391.8 L 392.8 405.8" fill="none" fill-opacity="1.0" stroke="#8A9096" stroke-width="1.8"/>
+<text x="411.2" y="402.8" font-family="IBM Plex Mono, Consolas, monospace" font-size="10.5" fill="#9AA3A8" text-anchor="start" font-weight="400">corte · la columna sigue hacia arriba</text>
+<line x1="284.8" y1="500.0" x2="399.2" y2="500.0" stroke="#E4E7E2" stroke-width="4" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="284.8" y1="500.0" x2="399.2" y2="500.0" stroke="#8A9096" stroke-width="1.2" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="4 3"/>
+<rect x="287.0" y="200.8" width="110.0" height="105.6" rx="5" fill="#D6DAD6" fill-opacity="1.0" stroke="#2B2F33" stroke-width="1.9"/>
+<rect x="298.0" y="306.4" width="88.0" height="26.4" rx="0" fill="#C8CDC9" fill-opacity="1.0" stroke="#2B2F33" stroke-width="1.3"/>
+<text x="342.0" y="260.6" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="21" fill="#2B2F33" text-anchor="middle" font-weight="600">M</text>
+<rect x="324.4" y="412.0" width="35.2" height="88.0" rx="0" fill="#FFFFFF" fill-opacity="0.4" stroke="#2B2F33" stroke-width="1.6"/>
+<line x1="324.4" y1="412.0" x2="359.6" y2="421.7" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="324.4" y1="421.7" x2="359.6" y2="431.4" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="324.4" y1="431.4" x2="359.6" y2="441.0" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="324.4" y1="441.0" x2="359.6" y2="450.7" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="324.4" y1="450.7" x2="359.6" y2="460.4" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="324.4" y1="460.4" x2="359.6" y2="470.1" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="324.4" y1="470.1" x2="359.6" y2="479.8" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="324.4" y1="479.8" x2="359.6" y2="489.4" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="324.4" y1="489.4" x2="359.6" y2="499.1" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<rect x="324.4" y="341.6" width="35.2" height="35.2" rx="0" fill="#FFFFFF" fill-opacity="0.4" stroke="#2B2F33" stroke-width="1.6"/>
+<line x1="324.4" y1="341.6" x2="359.6" y2="351.3" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="324.4" y1="351.3" x2="359.6" y2="361.0" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="324.4" y1="361.0" x2="359.6" y2="370.6" stroke="#B08D57" stroke-width="1.1" stroke-opacity="0.9" stroke-linecap="round"/>
+<line x1="342.0" y1="332.8" x2="342.0" y2="508.8" stroke="#2B2F33" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="8 3 2 3"/>
+<rect x="306.8" y="456.0" width="70.4" height="88.0" rx="2" fill="#B08D57" fill-opacity="0.45" stroke="#2B2F33" stroke-width="1.9"/>
+<rect x="313.4" y="544.0" width="57.2" height="44.0" rx="1" fill="#B08D57" fill-opacity="0.3" stroke="#2B2F33" stroke-width="1.5"/>
+<rect x="325.3" y="490.8" width="33.4" height="18.5" rx="9.240000000000002" fill="#E4E7E2" fill-opacity="1.0" stroke="#C0392B" stroke-width="1.8"/>
+<polygon points="381.6,429.6 460.8,451.6 465.2,535.2 381.6,544.0" fill="#8A9096" fill-opacity="0.35" stroke="#8A9096" stroke-width="1.8"/>
+<circle cx="430.0" cy="500.0" r="26.4" fill="#FFFFFF" fill-opacity="0.9" stroke="#B08D57" stroke-width="1.8"/>
+<circle cx="430.0" cy="500.0" r="17.6" fill="#6E7B8B" fill-opacity="0.75" stroke="#2B2F33" stroke-width="2.0"/>
+<line x1="386.0" y1="500.0" x2="474.0" y2="500.0" stroke="#2B2F33" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="8 3 2 3"/>
+<line x1="430.0" y1="544.0" x2="430.0" y2="456.0" stroke="#2B2F33" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="8 3 2 3"/>
+<circle cx="342.0" cy="500.0" r="8.8" fill="#C97B3C" fill-opacity="0.95" stroke="#2B2F33" stroke-width="1.8"/>
+<line x1="430.0" y1="500.0" x2="693.5" y2="429.4" stroke="#C0392B" stroke-width="1.0" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="4 3"/>
+<line x1="430.0" y1="500.0" x2="693.5" y2="570.6" stroke="#C0392B" stroke-width="1.0" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="4 3"/>
+<path d="M 693.5 429.4 A 272.8 272.8 0 0 1 693.5 570.6" fill="none" fill-opacity="1.0" stroke="#C0392B" stroke-width="1.9"/>
+<path d="M 693.5 429.4 l -1 9 l 9 -4 z" fill="#C0392B"/>
+<path d="M 693.5 570.6 l -1 -9 l 9 4 z" fill="#C0392B"/>
+<text x="705.5" y="426.4" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#C0392B" text-anchor="start" font-weight="400">+15° dorsiflexión</text>
+<text x="705.5" y="579.6" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#C0392B" text-anchor="start" font-weight="400">−15° flexión plantar</text>
+<line x1="342.0" y1="684.8" x2="430.0" y2="684.8" stroke="#6E7B8B" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 342.0 684.8 l 7 -3.2 l 0 6.4 z" fill="#6E7B8B"/>
+<path d="M 430.0 684.8 l -7 -3.2 l 0 6.4 z" fill="#6E7B8B"/>
+<line x1="342.0" y1="678.8" x2="342.0" y2="690.8" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="430.0" y1="678.8" x2="430.0" y2="690.8" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<text x="386.0" y="677.8" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#6E7B8B" text-anchor="middle" font-weight="400">r = 20 mm</text>
+<line x1="430.0" y1="720.0" x2="892.0" y2="720.0" stroke="#6E7B8B" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 430.0 720.0 l 7 -3.2 l 0 6.4 z" fill="#6E7B8B"/>
+<path d="M 892.0 720.0 l -7 -3.2 l 0 6.4 z" fill="#6E7B8B"/>
+<line x1="430.0" y1="714.0" x2="430.0" y2="726.0" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="892.0" y1="714.0" x2="892.0" y2="726.0" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<text x="661.0" y="713.0" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#6E7B8B" text-anchor="middle" font-weight="400">105 mm  (eje a la punta)</text>
+<line x1="276.0" y1="755.2" x2="430.0" y2="755.2" stroke="#6E7B8B" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 276.0 755.2 l 7 -3.2 l 0 6.4 z" fill="#6E7B8B"/>
+<path d="M 430.0 755.2 l -7 -3.2 l 0 6.4 z" fill="#6E7B8B"/>
+<line x1="276.0" y1="749.2" x2="276.0" y2="761.2" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="430.0" y1="749.2" x2="430.0" y2="761.2" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<text x="353.0" y="748.2" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#6E7B8B" text-anchor="middle" font-weight="400">35 mm</text>
+<line x1="570.8" y1="522.8" x2="570.8" y2="477.2" stroke="#C0392B" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 570.8 522.8 l -3.2 7 l 6.4 0 z" fill="#C0392B"/>
+<path d="M 570.8 477.2 l -3.2 -7 l 6.4 0 z" fill="#C0392B"/>
+<line x1="564.8" y1="522.8" x2="576.8" y2="522.8" stroke="#C0392B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="564.8" y1="477.2" x2="576.8" y2="477.2" stroke="#C0392B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<g transform="translate(562.8,500.0) rotate(-90)">
+<text x="0.0" y="0.0" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#C0392B" text-anchor="middle" font-weight="400">carrera 10,35 mm</text>
+</g>
+<line x1="377.2" y1="522.8" x2="570.8" y2="522.8" stroke="#C0392B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="4 3"/>
+<line x1="377.2" y1="477.2" x2="570.8" y2="477.2" stroke="#C0392B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="4 3"/>
+<line x1="276.0" y1="790.4" x2="892.0" y2="790.4" stroke="#9AA3A8" stroke-width="1" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="5 4"/>
+<text x="276.0" y="816.8" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#C0392B" text-anchor="start" font-weight="600">◄  POSTERIOR · talón</text>
+<text x="892.0" y="816.8" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#C0392B" text-anchor="end" font-weight="600">ANTERIOR · punta del pie  ►</text>
+<line x1="399.2" y1="244.8" x2="904.0" y2="184.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="904.0" y1="184.0" x2="922.0" y2="184.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="399.2" cy="244.8" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="930.0" y="188.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#2B2F33" text-anchor="start" font-weight="400">Motorreductor GA25-370 · 500 rpm</text>
+<line x1="377.2" y1="306.4" x2="904.0" y2="216.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="904.0" y1="216.0" x2="922.0" y2="216.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="377.2" cy="306.4" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="930.0" y="220.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#2B2F33" text-anchor="start" font-weight="400">Acople B7 · diámetro del eje sin medir</text>
+<line x1="394.8" y1="359.2" x2="904.0" y2="248.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="904.0" y1="248.0" x2="922.0" y2="248.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="394.8" cy="359.2" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="930.0" y="252.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#2B2F33" text-anchor="start" font-weight="400">Columna tibial A2 · canal en U, 26 mm de ancho, pieza fija</text>
+<line x1="355.2" y1="429.6" x2="904.0" y2="280.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="904.0" y1="280.0" x2="922.0" y2="280.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="355.2" cy="429.6" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="930.0" y="284.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#2B2F33" text-anchor="start" font-weight="400">Husillo TR8×2 · paso 2 mm/rev · va POR DENTRO de la columna</text>
+<line x1="311.2" y1="473.6" x2="904.0" y2="312.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="904.0" y1="312.0" x2="922.0" y2="312.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="311.2" cy="473.6" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="930.0" y="316.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#2B2F33" text-anchor="start" font-weight="400">Tuerca trapecial B2 · sube y baja 5,18 mm a cada lado</text>
+<line x1="320.0" y1="526.4" x2="904.0" y2="344.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="904.0" y1="344.0" x2="922.0" y2="344.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="320.0" cy="526.4" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="930.0" y="348.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#2B2F33" text-anchor="start" font-weight="400">Horquilla ranurada B3 · ranura 7,6 × 4,2 mm (ver panel C)</text>
+<line x1="346.4" y1="500.0" x2="904.0" y2="376.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="904.0" y1="376.0" x2="922.0" y2="376.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="346.4" cy="500.0" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="930.0" y="380.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#2B2F33" text-anchor="start" font-weight="400">Pasador ø4 · único punto donde el husillo empuja al pie</text>
+<line x1="456.4" y1="473.6" x2="904.0" y2="408.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="904.0" y1="408.0" x2="922.0" y2="408.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="456.4" cy="473.6" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="930.0" y="412.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#2B2F33" text-anchor="start" font-weight="400">Eje del tobillo ø8 acero · buje de bronce 8×12×10</text>
+<line x1="460.8" y1="526.4" x2="904.0" y2="440.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="904.0" y1="440.0" x2="922.0" y2="440.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="460.8" cy="526.4" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="930.0" y="444.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#2B2F33" text-anchor="start" font-weight="400">Cubo del tobillo A3 · fijo, cuelga de la columna</text>
+<line x1="694.0" y1="627.6" x2="904.0" y2="472.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="904.0" y1="472.0" x2="922.0" y2="472.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="694.0" cy="627.6" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="930.0" y="476.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13.5" fill="#2B2F33" text-anchor="start" font-weight="400">Placa L A5 · planta del pie y brazo, una a cada lado</text>
+<rect x="930.0" y="510.0" width="14.0" height="14.0" rx="0" fill="#8A9096" fill-opacity="0.4" stroke="#8A9096" stroke-width="1"/>
+<text x="952.0" y="521.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">piezas fijas: columna, cubo, motor</text>
+<rect x="930.0" y="532.0" width="14.0" height="14.0" rx="0" fill="#C97B3C" fill-opacity="0.25" stroke="#C97B3C" stroke-width="1"/>
+<text x="952.0" y="543.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">piezas que giran con el pie: placas L, pasador</text>
+<rect x="930.0" y="554.0" width="14.0" height="14.0" rx="0" fill="#B08D57" fill-opacity="0.45" stroke="#B08D57" stroke-width="1"/>
+<text x="952.0" y="565.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">piezas que suben y bajan: tuerca, horquilla</text>
+<rect x="928.0" y="596.0" width="545.0" height="118.0" rx="3" fill="#FFFFFF" fill-opacity="0.55" stroke="#9AA3A8" stroke-width="1"/>
+<text x="944.0" y="620.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="14" fill="#2B2F33" text-anchor="start" font-weight="600">Por dónde baja la carga</text>
+<text x="944.0" y="642.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">Con el pie en el aire, el pasador recibe unos 15 N.</text>
+<text x="944.0" y="661.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">Con el pie apoyado, el peso baja del pie al chasis por las placas L,</text>
+<text x="944.0" y="680.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">sin pasar por el pasador ni por el husillo.</text>
+<text x="944.0" y="702.0" font-family="IBM Plex Mono, Consolas, monospace" font-size="11" fill="#C0392B" text-anchor="start" font-weight="400">SUPUESTO · separación declarada en el diseño, todavía sin verificar</text>
+<line x1="48.0" y1="806.0" x2="1472.0" y2="806.0" stroke="#9AA3A8" stroke-width="1" stroke-opacity="0.55" stroke-linecap="round"/>
+<text x="48.0" y="844.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="18" fill="#2B2F33" text-anchor="start" font-weight="600">B · Corte frontal por el eje del tobillo</text>
+<text x="48.0" y="864.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">Cómo se intercalan las piezas a lo ancho.</text>
+<text x="48.0" y="886.0" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#C0392B" text-anchor="start" font-weight="400">Los 38 mm son provisionales: falta medir el ancho real de la tuerca.</text>
+<rect x="337.2" y="952.8" width="23.5" height="244.4" rx="0" fill="#C97B3C" fill-opacity="0.25" stroke="#2B2F33" stroke-width="1.6"/>
+<rect x="539.3" y="952.8" width="23.5" height="244.4" rx="0" fill="#C97B3C" fill-opacity="0.25" stroke="#2B2F33" stroke-width="1.6"/>
+<rect x="360.7" y="966.9" width="23.5" height="216.2" rx="0" fill="#8A9096" fill-opacity="0.4" stroke="#2B2F33" stroke-width="1.6"/>
+<rect x="515.8" y="966.9" width="23.5" height="216.2" rx="0" fill="#8A9096" fill-opacity="0.4" stroke="#2B2F33" stroke-width="1.6"/>
+<rect x="360.7" y="1046.8" width="23.5" height="56.4" rx="0" fill="#FFFFFF" fill-opacity="0.95" stroke="#B08D57" stroke-width="1.8"/>
+<rect x="515.8" y="1046.8" width="23.5" height="56.4" rx="0" fill="#FFFFFF" fill-opacity="0.95" stroke="#B08D57" stroke-width="1.8"/>
+<rect x="412.4" y="976.3" width="75.2" height="197.4" rx="2" fill="#B08D57" fill-opacity="0.4" stroke="#2B2F33" stroke-width="1.7"/>
+<circle cx="450.0" cy="1004.5" r="18.8" fill="#FFFFFF" fill-opacity="0.6" stroke="#2B2F33" stroke-width="1.6"/>
+<rect x="337.2" y="1056.2" width="225.6" height="37.6" rx="2" fill="#6E7B8B" fill-opacity="0.7" stroke="#2B2F33" stroke-width="1.8"/>
+<line x1="313.7" y1="1075.0" x2="586.3" y2="1075.0" stroke="#2B2F33" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="8 3 2 3"/>
+<rect x="337.2" y="1183.1" width="225.6" height="37.6" rx="0" fill="#C97B3C" fill-opacity="0.25" stroke="#2B2F33" stroke-width="1.6"/>
+<line x1="337.2" y1="1220.7" x2="562.8" y2="1220.7" stroke="#C0392B" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 337.2 1220.7 l 7 -3.2 l 0 6.4 z" fill="#C0392B"/>
+<path d="M 562.8 1220.7 l -7 -3.2 l 0 6.4 z" fill="#C0392B"/>
+<line x1="337.2" y1="1214.7" x2="337.2" y2="1226.7" stroke="#C0392B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="562.8" y1="1214.7" x2="562.8" y2="1226.7" stroke="#C0392B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<text x="450.0" y="1213.7" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#C0392B" text-anchor="middle" font-weight="400">48 mm (propuesto)</text>
+<line x1="360.7" y1="952.8" x2="360.7" y2="938.7" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="3 3"/>
+<line x1="539.3" y1="952.8" x2="539.3" y2="938.7" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="3 3"/>
+<line x1="360.7" y1="943.4" x2="539.3" y2="943.4" stroke="#6E7B8B" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 360.7 943.4 l 7 -3.2 l 0 6.4 z" fill="#6E7B8B"/>
+<path d="M 539.3 943.4 l -7 -3.2 l 0 6.4 z" fill="#6E7B8B"/>
+<line x1="360.7" y1="937.4" x2="360.7" y2="949.4" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="539.3" y1="937.4" x2="539.3" y2="949.4" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<text x="450.0" y="936.4" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#6E7B8B" text-anchor="middle" font-weight="400">38 mm entre placas del cubo</text>
+<line x1="348.9" y1="981.0" x2="348.9" y2="936.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="348.9" y1="936.0" x2="258.0" y2="936.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="348.9" cy="981.0" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="252.0" y="940.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#2B2F33" text-anchor="end" font-weight="400">Placa L · gira con el pie</text>
+<line x1="372.4" y1="990.4" x2="372.4" y2="964.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="372.4" y1="964.0" x2="258.0" y2="964.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="372.4" cy="990.4" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="252.0" y="968.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#2B2F33" text-anchor="end" font-weight="400">Placa del cubo · fija</text>
+<line x1="372.4" y1="1075.0" x2="372.4" y2="992.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="372.4" y1="992.0" x2="258.0" y2="992.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="372.4" cy="1075.0" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="252.0" y="996.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#2B2F33" text-anchor="end" font-weight="400">Buje de bronce 8×12×10</text>
+<line x1="450.0" y1="1004.5" x2="450.0" y2="1020.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="450.0" y1="1020.0" x2="258.0" y2="1020.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="450.0" cy="1004.5" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="252.0" y="1024.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#2B2F33" text-anchor="end" font-weight="400">Husillo ø8 y tuerca B2</text>
+<line x1="551.0" y1="1075.0" x2="551.0" y2="1096.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="551.0" y1="1096.0" x2="614.0" y2="1096.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="551.0" cy="1075.0" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="620.0" y="1100.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#2B2F33" text-anchor="start" font-weight="400">Eje del tobillo ø8</text>
+<line x1="497.0" y1="1164.3" x2="497.0" y2="1128.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="497.0" y1="1128.0" x2="614.0" y2="1128.0" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="497.0" cy="1164.3" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="620.0" y="1132.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#2B2F33" text-anchor="start" font-weight="400">Planta del pie</text>
+<text x="790.0" y="844.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="18" fill="#2B2F33" text-anchor="start" font-weight="600">C · Detalle de la ranura de la horquilla B3</text>
+<text x="790.0" y="864.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">El agujero alargado deja que el pasador se corra de lado mientras sube y baja.</text>
+<rect x="883.8" y="896.5" width="262.5" height="217.0" rx="5" fill="#B08D57" fill-opacity="0.28" stroke="#2B2F33" stroke-width="2.0"/>
+<rect x="948.5" y="968.2" width="133.0" height="73.5" rx="36.75" fill="#E4E7E2" fill-opacity="1.0" stroke="#C0392B" stroke-width="2.2"/>
+<circle cx="1003.1" cy="1005.0" r="35.0" fill="#C97B3C" fill-opacity="0.22" stroke="#2B2F33" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="1015.0" cy="1005.0" r="35.0" fill="#C97B3C" fill-opacity="0.9" stroke="#2B2F33" stroke-width="1.5"/>
+<circle cx="1026.9" cy="1005.0" r="35.0" fill="#C97B3C" fill-opacity="0.22" stroke="#2B2F33" stroke-width="1.5" stroke-dasharray="3 3"/>
+<line x1="948.5" y1="1005.0" x2="1081.5" y2="1005.0" stroke="#2B2F33" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round" stroke-dasharray="8 3 2 3"/>
+<line x1="948.5" y1="1068.0" x2="1081.5" y2="1068.0" stroke="#6E7B8B" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 948.5 1068.0 l 7 -3.2 l 0 6.4 z" fill="#6E7B8B"/>
+<path d="M 1081.5 1068.0 l -7 -3.2 l 0 6.4 z" fill="#6E7B8B"/>
+<line x1="948.5" y1="1062.0" x2="948.5" y2="1074.0" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="1081.5" y1="1062.0" x2="1081.5" y2="1074.0" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<text x="1015.0" y="1061.0" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#6E7B8B" text-anchor="middle" font-weight="400">7,6 mm</text>
+<line x1="1104.2" y1="1041.8" x2="1104.2" y2="968.2" stroke="#6E7B8B" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 1104.2 1041.8 l -3.2 7 l 6.4 0 z" fill="#6E7B8B"/>
+<path d="M 1104.2 968.2 l -3.2 -7 l 6.4 0 z" fill="#6E7B8B"/>
+<line x1="1098.2" y1="1041.8" x2="1110.2" y2="1041.8" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="1098.2" y1="968.2" x2="1110.2" y2="968.2" stroke="#6E7B8B" stroke-width="0.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<g transform="translate(1096.2,1005.0) rotate(-90)">
+<text x="0.0" y="0.0" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#6E7B8B" text-anchor="middle" font-weight="400">4,2 mm</text>
+</g>
+<line x1="1039.5" y1="980.5" x2="1172.5" y2="924.5" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<line x1="1172.5" y1="924.5" x2="1183.0" y2="924.5" stroke="#9AA3A8" stroke-width="0.9" stroke-opacity="1.0" stroke-linecap="round"/>
+<circle cx="1039.5" cy="980.5" r="2.2" fill="#9AA3A8" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="1188.2" y="929.5" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#2B2F33" text-anchor="start" font-weight="400">pasador ø4</text>
+<line x1="973.9" y1="949.0" x2="953.8" y2="949.0" stroke="#C0392B" stroke-width="1.6" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 952.0 949.0 l 8 -4 l 0 8 z" fill="#C0392B"/>
+<line x1="1056.1" y1="949.0" x2="1076.2" y2="949.0" stroke="#C0392B" stroke-width="1.6" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 1078.0 949.0 l -8 -4 l 0 8 z" fill="#C0392B"/>
+<text x="1015.0" y="942.0" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#C0392B" text-anchor="middle" font-weight="400">± 0,68 mm de juego lateral</text>
+<line x1="910.0" y1="1027.8" x2="910.0" y2="1050.5" stroke="#C97B3C" stroke-width="1.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 910.0 1052.2 l -4 -8 l 8 0 z" fill="#C97B3C"/>
+<line x1="910.0" y1="982.2" x2="910.0" y2="959.5" stroke="#C97B3C" stroke-width="1.8" stroke-opacity="1.0" stroke-linecap="round"/>
+<path d="M 910.0 957.8 l -4 8 l 8 0 z" fill="#C97B3C"/>
+<text x="910.0" y="1085.5" font-family="IBM Plex Mono, Consolas, monospace" font-size="11.5" fill="#C97B3C" text-anchor="middle" font-weight="400">sube y baja</text>
+<rect x="790.0" y="1112.0" width="690.0" height="124.0" rx="3" fill="#FFFFFF" fill-opacity="0.55" stroke="#9AA3A8" stroke-width="1"/>
+<text x="806.0" y="1136.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="14" fill="#2B2F33" text-anchor="start" font-weight="600">Por qué hace falta la ranura</text>
+<text x="806.0" y="1158.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">La tuerca baja en línea recta. El pasador, en cambio, describe un arco de</text>
+<text x="806.0" y="1177.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">20 mm de radio, así que además de bajar se corre un poco de lado. Con un</text>
+<text x="806.0" y="1196.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="13" fill="#6E7B8B" text-anchor="start" font-weight="400">agujero redondo el mecanismo se traba y flexiona el husillo.</text>
+<text x="806.0" y="1220.0" font-family="IBM Plex Mono, Consolas, monospace" font-size="11" fill="#C0392B" text-anchor="start" font-weight="400">corrimiento a 15° = r · (1 − cos θ) = 0,68 mm</text>
+<line x1="762.0" y1="842.0" x2="762.0" y2="1240.0" stroke="#9AA3A8" stroke-width="1" stroke-opacity="0.55" stroke-linecap="round"/>
+</svg>
